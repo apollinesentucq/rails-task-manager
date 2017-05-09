@@ -1,0 +1,6 @@
+<h1>Tasks#show</h1>
+<ol>
+  <li>
+    <%= @task.title %> -- <%= @task.description %> <%= link_to "Edit", edit_task_path %> | <%= link_to "Delete", task_path, method: :delete, data: { confirm: "Are you sure?" } %>
+  </li>
+</ol>
